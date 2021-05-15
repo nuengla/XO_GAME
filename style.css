@@ -1,0 +1,165 @@
+.btn{
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+
+}
+.pic{
+    width: 100px;
+    height: 100px;
+}
+.big_board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+
+
+}
+.cell{
+    padding: 3px 3px 3px 3px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+#select{
+    width: 100px;
+    text-align: center;
+}
+
+#endgame{
+    background: rgba(187, 255, 0, 0.5);
+    height: 100vh;
+    width: 100vw;  
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#msg{
+    font-size: 100px;
+    display: block;
+    background: whitesmoke;
+}
+#btn_restart{
+    font-size: 50px;
+}
+.btn_history{
+    background-color: rgb(95, 2, 170);
+    font-size: 20px;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+.btn_history:hover{
+    background-color: rgb(123, 27, 201);
+
+}
+
+#btn_create{
+    background-color: rgb(33, 201, 0);
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    
+    border-radius: 5px;
+    border: 0px
+}
+#btn_create:hover{
+    background-color: rgb(38, 226, 0);
+}
+#select{
+    font-size: 30px;
+
+}
+input::-webkit-inner-spin-button{
+    padding: 5px
+}
+#text{
+    font-size: 30px;
+}
+.boxStart{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    
+}
+.boxStart_top{
+    font-size: 100px;
+    
+    margin-bottom: -50px;
+    margin-top: -150px
+}
+.boxStart_foot{
+ 
+    padding: 30px
+}
+
+#btn_back{
+    display: none;
+    background: gray;
+    font-size: 20px;
+    color:white;
+}
+.cell_detail{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+.view_board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: fit-content;
+}
+#table td{
+    text-align: center;
+}
+
+#detail ul{
+    font-size: 20px;
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+}
+#detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.btn_view{
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn_view:hover{
+    background: lightblue;
+    color: blue;
+}
+table , td, tr{
+    padding: 15px;
+    border: 1px solid black;
+   
+  }
+table{
+     border-collapse: collapse;
+    width: 100%;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
