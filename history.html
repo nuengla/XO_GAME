@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>XO_GAME</title>
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>XO_GAME</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/28-toys-and-childhood/tic-tac-toe.png">
 </head>
+
 <body>
-    
+
   <h1 style="text-align: center;">History play</h1>
   <div style="text-align: center;margin-bottom: 30px;">
-      <button onClick="window.location.href = 'index.html';" id="btn_create">HOME</button>
+    <button onClick="window.location.href = 'index.html';" id="btn_create">HOME</button>
   </div>
   <div id="container">
     <ul id="show"></ul>
     <table id='table'>
-      <tr >
-        <td  style="text-align: center;font-size: 20px;">Date-Time</td>
-        <td  style="text-align: center;font-size: 20px;">Winner</td>
-        <td  style="text-align: center;font-size: 20px;">Game_id</td>
-        <td  style="text-align: center;font-size: 20px;">view</td>
+      <tr>
+        <td style="text-align: center;font-size: 20px;">Date-Time</td>
+        <td style="text-align: center;font-size: 20px;">Winner</td>
+        <td style="text-align: center;font-size: 20px;">Game_id</td>
+        <td style="text-align: center;font-size: 20px;">view</td>
       </tr>
     </table>
   </div>
   <div id="detail">
-    
-    
-<div id="detail_board">
 
-  <div class="view_board" id="view_board"></div>
-</div>
+
+    <div id="detail_board">
+
+      <div class="view_board" id="view_board"></div>
+    </div>
 
     <div id="detail_data">
       <button onClick="window.location.href = 'History.html';" style="display: none;" id="btn_back">Back</button>
-      <ul id="showData"></ul>
+      <ul id="showData">
+
+      </ul>
+
     </div>
 
   </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
 
-<script>
+  <script>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCpL-DWvS3IynraQpIB4EHiR6mH1qmSwSE",
-    authDomain: "xogame-827cd.firebaseapp.com",
-    projectId: "xogame-827cd",
-    storageBucket: "xogame-827cd.appspot.com",
-    messagingSenderId: "1046382876351",
-    appId: "1:1046382876351:web:1d70e18aee4c22472ad80a",
-    measurementId: "G-STSH5GNYNZ"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  const db = firebase.firestore(); 
-</script>
-<script
-src="https://code.jquery.com/jquery-3.6.0.js"
-integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-crossorigin="anonymous"></script>
-    <script src="query.js"></script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBIy9f_Yg_YD0qQKS0-BM0Uf0O7uNaXPtQ",
+      authDomain: "xogame2-f09ff.firebaseapp.com",
+      projectId: "xogame2-f09ff",
+      storageBucket: "xogame2-f09ff.appspot.com",
+      messagingSenderId: "582444122989",
+      appId: "1:582444122989:web:e9d22828a84786642bd064",
+      measurementId: "G-D45C6QS6GG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="query.js"></script>
 </body>
+
 </html>

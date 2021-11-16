@@ -138,7 +138,7 @@ $('#btn_create').click(function createboard() {
         [2,4,6]
     ]; */
 
-  
+
     let abs = [];
 
     function checkwin() {
@@ -150,7 +150,7 @@ $('#btn_create').click(function createboard() {
                 tmpArray.push(f);
 
                 abs.push(f)
-               
+
             }
         }
 
@@ -184,7 +184,7 @@ $('#btn_create').click(function createboard() {
 
             addTurn()
             add_draw()
-           
+
         } else {
 
             return winYong;
@@ -209,7 +209,7 @@ $('#btn_create').click(function createboard() {
 
         add();
         addTurn();
-      
+
     }
 
     function turn(btn) {

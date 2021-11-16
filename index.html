@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/28-toys-and-childhood/tic-tac-toe.png">
     <title>XO_GAME</title>
 </head>
 
 <body>
-
 
     <div class="container">
 
@@ -30,7 +32,6 @@
 
             </div>
 
-
         </div>
 
         <div class="big_board" id="big_board"></div>
@@ -42,12 +43,11 @@
         </div>
     </div>
 
-
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
+     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
 
     <script>
@@ -55,19 +55,20 @@
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
-            apiKey: "AIzaSyCpL-DWvS3IynraQpIB4EHiR6mH1qmSwSE",
-            authDomain: "xogame-827cd.firebaseapp.com",
-            projectId: "xogame-827cd",
-            storageBucket: "xogame-827cd.appspot.com",
-            messagingSenderId: "1046382876351",
-            appId: "1:1046382876351:web:1d70e18aee4c22472ad80a",
-            measurementId: "G-STSH5GNYNZ"
+            apiKey: "AIzaSyBIy9f_Yg_YD0qQKS0-BM0Uf0O7uNaXPtQ",
+            authDomain: "xogame2-f09ff.firebaseapp.com",
+            projectId: "xogame2-f09ff",
+            storageBucket: "xogame2-f09ff.appspot.com",
+            messagingSenderId: "582444122989",
+            appId: "1:582444122989:web:e9d22828a84786642bd064",
+            measurementId: "G-D45C6QS6GG"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        const db = firebase.firestore(); 
+        const db = firebase.firestore();
     </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>

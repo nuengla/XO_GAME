@@ -12,8 +12,6 @@ function showHistory() {
                 var winner = (docs.data().player_win);
                 var size = (docs.data().size_board);
 
-
-
                 var table = document.getElementById('table');
 
                 var node = document.createElement("TR");
@@ -72,28 +70,39 @@ function viewData(gameID, winner, size) {
     var t1 = document.createTextNode('Game_id : ' + gameID);
     var t2 = document.createTextNode(' Winner : ' + winner);
     var t3 = document.createTextNode(' Size : ' + size + ' X ' + size);
+    var t4 = document.createElement("BR");
+
 
     node.appendChild(t1);
     node.appendChild(t2);
     node.appendChild(t3);
+    node.appendChild(t4);
+
 
     ul.appendChild(node)
+    ul.appendChild(t4)
 
     const player1 = 'O';
     const player2 = 'X';
     var curPlay = player1;
+
+
+
     db.collection('turn')
+
         .where('game_id', '==', gameID)
-        .orderBy('round', 'asc')
+        .orderBy('round')
         .get()
+
         .then(function (snapshot) {
+
             snapshot.forEach(function (docs) {
 
                 curPlay = curPlay == player1 ? player2 : player1;
                 var ul = document.getElementById('showData');
                 var node = document.createElement("LI");
                 var t1 = document.createTextNode(curPlay);
-                /* var t1 = document.createTextNode('game_id : '+docs.data().game_id); */
+                //  var t1 = document.createTextNode('game_id : '+docs.data().game_id); 
                 var t2 = document.createTextNode(' Round : ' + docs.data().round);
                 var t3 = document.createTextNode(' Position : ' + docs.data().position);
                 node.appendChild(t1);
